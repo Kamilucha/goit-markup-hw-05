@@ -45,22 +45,25 @@ img{
 .page-header-container{
         display: flex;
         align-items: center;
+        height: 100%;
         
 }
 .page-header{
         border-bottom: 1px solid #E7E9FC;
         padding-top: 24px;
         padding-bottom: 24px;
-        max-height: 76px;
+        height: 76px;
         
 }
 .page-nav{
         display: flex;
         align-items: center;
+        height: 100%;
 }
 .menu{
         display: flex;
         align-items: center;
+        height: 100%;
 }
 .contact-menu{
         display: flex;
@@ -77,6 +80,7 @@ img{
 }
 .address-page{
         margin-left: auto;
+        height: 100%;
 }
 
 
@@ -133,40 +137,40 @@ img{
         text-transform: uppercase;
         color: var(--title-color);
         margin-right: 70px;
+        height: 100%;
 }
 .footer-logo{
         margin-right: 0px;
 }
+
 .menu-link{
         font-weight: 500;     
         line-height: 1.5;
         color: var(--title-color);
         letter-spacing: 0.02cm;
         transition: color var(--transition);
-        
+        height: 100%;
+        padding-top: 24px;
+        padding-bottom: 28px;
+        position: relative;
 }
 
-.menu-link::after{
+.current::after{
         content: '';
         display: block;
         width: 100%;
         height: 4px;
         border-radius: 2px;
-        background-color: var(--contrast-color);
-        opacity: 0;   
-        
-
-        
+        background-color: #404BBF;
+        position: absolute;
+        bottom: 0;
 }
 
-.menu-link:hover::after{
-        opacity: 1;
-
+.current{
+        color: #404BBF;
 }
 
-.menu-link:hover::after .menu-item{
-        opacity: 1;
-}
+
 
 .menu-link:hover,
 .menu-link:focus{
