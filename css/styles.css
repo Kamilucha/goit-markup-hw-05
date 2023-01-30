@@ -45,20 +45,18 @@ img{
 .page-header-container{
         display: flex;
         align-items: center;
-        height: 100%;
+        
         
 }
 .page-header{
         border-bottom: 1px solid #E7E9FC;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        height: 76px;
+        
         
 }
 .page-nav{
         display: flex;
         align-items: center;
-        height: 100%;
+        
 }
 .menu{
         display: flex;
@@ -80,7 +78,7 @@ img{
 }
 .address-page{
         margin-left: auto;
-        height: 100%;
+        
 }
 
 
@@ -149,10 +147,10 @@ img{
         color: var(--title-color);
         letter-spacing: 0.02cm;
         transition: color var(--transition);
-        height: 100%;
         padding-top: 24px;
-        padding-bottom: 28px;
+        padding-bottom: 24px;
         position: relative;
+        display: block;
 }
 
 .current::after{
@@ -163,7 +161,7 @@ img{
         border-radius: 2px;
         background-color: #404BBF;
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
 }
 
 .current{
@@ -231,6 +229,7 @@ img{
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
+        cursor: pointer;
         color: var(--white-color);
         display: flex;
         background: var(--contrast-color);
@@ -552,6 +551,7 @@ border: 0.5px solid #F4F4FD;
 
 .modal-close-btn{
         position: absolute;
+        cursor: pointer;
         top: 24px;
         right: 24px;
         display: flex;
